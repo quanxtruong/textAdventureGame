@@ -35,6 +35,10 @@ java {
     }
 }
 
+run {
+    standardInput = System.in 
+}
+
 application {
     mainClass = providers.systemProperty('javaMainClass')
                          .orElse('palm.workshop.App')
@@ -44,3 +48,5 @@ tasks.named('test') {
     // Use JUnit Platform for unit tests.
     useJUnitPlatform()
 }
+
+
