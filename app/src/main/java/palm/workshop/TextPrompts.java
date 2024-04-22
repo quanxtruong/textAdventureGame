@@ -13,7 +13,7 @@ public class TextPrompts {
             .location("us-central1")
             .publisher("google")
             .modelName("text-bison@001")
-            .maxOutputTokens(500)
+            .maxOutputTokens(300)
             .build();
         
         String context = "You find yourself in the middle of a mystical forest, with a sword, a bow, " +
