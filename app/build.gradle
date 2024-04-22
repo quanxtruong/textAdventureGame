@@ -41,7 +41,7 @@ run {
 
 application {
     mainClass = providers.systemProperty('javaMainClass')
-                         .orElse('palm.workshop.App')
+                         .orElse('palm.workshop.TextPrompts')
 }
 
 tasks.named('test') {
