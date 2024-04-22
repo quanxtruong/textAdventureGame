@@ -16,8 +16,8 @@ public class TextPrompts {
             .maxOutputTokens(500)
             .build();
         
-        String context = "You find yourself in the middle of the forest, with a sword, a bow, " +
-        "or a magical staff in front of you\nWhat do you do?";
+        String context = "You find yourself in the middle of a mystical forest, with a sword, a bow, " +
+        "and a magical staff in front of you\nWhat do you do?";
         System.out.println("\nWelcome to this Text Adventure Game!");
         System.out.println(context);
 
@@ -31,7 +31,7 @@ public class TextPrompts {
                 System.out.println("See you next time adventurer!");
             } else {
                 Response<String> response = model.generate("Based on this context: " + context + 
-                            ", continue the story with an only one sentence scenario and then ask only one question, dungeons and dragons style" 
+                            ", continue the story with an only one sentence scenario and then ask only one question in a dungeons and dragons style" 
                             + userInput.toString());
                 context = "\n" + response.content();
                 System.out.println(context); 
